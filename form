@@ -1,0 +1,65 @@
+<?php
+include("fff.php");
+?>
+<html>
+<head>
+<title> SIGNUP FORM </title>
+<style>
+table{
+color:white;
+background-color:green;
+border-radius:30px;
+}
+
+#btn
+{
+background-color:blue;
+color:white;
+height:35px;
+width:100px;
+border-radius:25px;
+}
+</style>
+</head>
+<body background="https://wallpaperforu.com/wp-content/uploads/2020/08/pastel-wallpaper-20081916271930-scaled.jpg">
+<form>
+<table align="center" border="0" cellspacing="20">
+<tr> 
+<td>First Name<td><input type="text" placeholder="First Name" name="firstname"/></td></tr>
+<tr> 
+<td>Last Name<td><input type="text" placeholder="Last Name" name="lastname"/></td></tr>
+<tr><td>
+Roll no<td><input type="text" placeholder="Roll no" name="rollno"/></td></tr>
+<tr><td>
+Email Address<td><input type="text"  placeholder="Email Name" name="email"/></td></tr>
+<tr><td>
+Password<td><input type="text" placeholder="Password" name="password"/></td></tr>
+<tr><td>
+Confirm Password<td><input type="password" placeholder="confirm password" name="conpassword"/></td></tr>
+<tr><td>
+Gender<td><input type="radio" name="r">Male<input type="radio" name="r"/>Female</td></tr><br><br><br><br><br><br><br>
+<tr><td align="center" colspan="2">
+<input type="submit" value="Submit" name="submit" id="btn"/></tr>
+</form>
+</table>
+</body>
+</html>
+
+
+<?php
+
+$fn=$_GET['firstname'];
+$ln=$_GET['lastname'];
+$rn=$_GET['rollno'];
+$em=$_GET['email'];
+$pwd=$_GET['password'];
+$conpwd=$_GET['conpassword'];
+
+echo "$fn";
+echo "$ln";
+echo "$rn";
+echo "$em";
+echo "$pwd";
+echo "$conpwd";
+
+?>
